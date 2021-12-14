@@ -16,6 +16,5 @@ RSpec.describe 'studio show page' do
   expect(page).to have_content(universal.location)
   expect(page).to have_content(movie_1.title)
   expect(page).to have_content(movie_2.title)
-  save_and_open_page
  end
 end
