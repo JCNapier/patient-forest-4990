@@ -26,7 +26,9 @@ RSpec.describe 'movie show page' do
  end
 
  it 'can show the average age of all actors' do
+   visit "/movies/#{movie_1.id}"
+   
    expect(page).to have_content("Actors Average Age:")
-   expect(page).to have_content(Float)
+   expect(page).to have_content("69.0")
  end 
 end
